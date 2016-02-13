@@ -9,6 +9,8 @@
   "author": "Sae Vang",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-connect-php": "0.0.7"
+    "gulp-concat": "^2.6.0",
+    "gulp-connect-php": "0.0.7",
+    "gulp-util": "^3.0.7"
   }
 }
