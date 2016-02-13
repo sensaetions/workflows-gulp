@@ -4,7 +4,9 @@
 (function (window, $) {
     'use strict';
 
+
     $(function () {
+        //var jQuery = require('jquery');
         var smoothScroll = $('.smooth-scroll');
 
         function smoothScrolling() {
@@ -20,12 +22,10 @@
                     }
                 }
             });
-        }
+        } // smooth-scrolling
 
         // on all screens, do these
         smoothScrolling();
     });
 
 })(window, jQuery);
-
-

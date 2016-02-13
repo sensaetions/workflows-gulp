@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     // style related
     
     // js related
+    browserify = require('gulp-browserify'),
     concat = require('gulp-concat'),
 
     // server related
@@ -21,6 +22,7 @@ var scriptSources = ['components/scripts/*.js']
 gulp.task('scripts', function() {
     gulp.src(scriptSources)
         .pipe(concat('scripts.js'))
+        .pipe(browserify())
         .pipe(gulp.dest('builds/development/scripts'))
 });
 
