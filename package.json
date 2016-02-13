@@ -1,0 +1,14 @@
+{
+  "name": "workflows-gulp",
+  "version": "0.0.1",
+  "description": "Creating frontend development workflow using Gulp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sensaetions/workflows-gulp.git"
+  },
+  "author": "Sae Vang",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect-php": "0.0.7"
+  }
+}

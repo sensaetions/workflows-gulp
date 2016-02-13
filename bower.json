@@ -1,0 +1,18 @@
+{
+  "name": "workflows-gulp",
+  "description": "Creating frontend development workflow using Gulp",
+  "authors": [
+    "Sae Vang"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "breakpoint-sass": "^2.6.1"
+  }
+}
