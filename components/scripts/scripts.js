@@ -1,12 +1,12 @@
 /*jslint browser: true*/
 /*global $, jQuery*/
 
+    var $ = require('jquery');
 (function (window, $) {
     'use strict';
-
+    
 
     $(function () {
-        //var jQuery = require('jquery');
         var smoothScroll = $('.smooth-scroll');
 
         function smoothScrolling() {

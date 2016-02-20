@@ -1,4 +1,4 @@
-        <script src="../scripts/scripts.js"></script>
+        <script src="../scripts/bundle.js"></script>
         
     </body>
 </html>

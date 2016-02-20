@@ -16,7 +16,6 @@
 @mixin border-radius($radius) {
     border-radius: $radius;
     background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */
 }
 
 @mixin box-shadow($horiz, $vert, $blur, $spread, $color) {
@@ -35,6 +34,19 @@
 // stripe backgrounds
 @mixin stripe-background($color1, $color2, $deg: -45deg, $size1: 1px, $size2: 0, $size3: 10px) {
     background: repeating-linear-gradient( $deg, $color1, $color1 $size1, $color2 $size2, $color2 $size3);
+}
+
+@mixin verti-centered ($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin hori-verti-centered ($position:relative) {
+    position: $position;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 // ANIMATION
@@ -109,7 +121,6 @@
     cursor: pointer;
     display: inline-block;
     font: {
-        family: $font-stack-condensed-bold;
         size: 16px;
     }
     line-height: 1;
@@ -144,7 +155,7 @@
 %clearfix {
     *zoom: 1;
     &:before, &:after {
-        content: " ";
+        content: "";
         display: table;
     }
     &:after {
@@ -152,20 +163,7 @@
     }
 }
 
-%verti-centered($position: relative) {
-    position: $position;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-%hori-verti-centered($position:relative) {
-    position: $position;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-%visuallyhidden, .visuallyhidden {
+%visuallyhidden {
     border: 0px none;
     clip: rect(0px, 0px, 0px, 0px);
     height: 1px;
